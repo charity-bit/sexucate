@@ -207,6 +207,23 @@ nav ul li a:hover {
   color: var(--clr-light);
 }
 
+.bot-container{
+  display: flex;
+}
+.b-left{
+  width:40%;
+  height: 100%;
+}
+
+.b-right{
+
+
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes animate {
   0% {
     transform: translateY(0);
