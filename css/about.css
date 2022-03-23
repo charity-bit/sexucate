@@ -272,3 +272,154 @@ margin-top: 5%;
     line-height: 35px;
     margin-top: 5%;
 }
+
+.impact-container{
+   padding: 5% 0;
+}
+
+.section-title{
+  text-align: center;
+  color: var(--clr-accent);
+}
+
+
+.stats{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 4% 0;
+
+}
+
+.stats div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats h1{
+  font-size: 4vw;
+  font-weight:600;
+  color: var(--clr-accent);
+}
+
+.stats p{
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.team-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 0;
+  
+}
+.hel,.ot,.lala,.linda{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.position{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 80%;
+  height: 200px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.positin h4{
+  font-size: 16px;
+}
+.position p {
+  font-size: 12px;
+  color: var(--clr-accent);
+}
+.position p span{
+  display: block;
+}
+.hel img ,.ot img,.lala img,.linda img{
+  height: 350px;
+  width: 100%
+  
+  
+}
+
+
+  
+
+/* footer */
+
+#footer{
+  background-color: var(--clr-light-blue);
+  padding-top:4%;
+  padding-bottom: 0;
+
+}
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+}
+.main-list{
+  display: flex;
+  justify-content: space-between;
+}
+.main-list ul {
+  display: flex;
+  flex-direction: column;
+}
+.about h3,.inform h3,.fsupport h3,.usupport h3{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+.about,.fsupport,.usupport,.inform{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:10px
+}
+
+li a{
+  text-align: left;
+}
+.main-list ul li a{
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--clr-dark);
+
+}
+
+.hr2{
+  background-color: var(--clr-accent);
+  height: 4px;
+  width: 100%;
+}
+.pr{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.pr ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap:1px;
+}
+.pr ul li small{
+  font-size: 10px;
+}
+.footer-nav p{
+  font-size: 10px;
+  align-self: flex-end;
+  margin-bottom: 1%;
+
+}
