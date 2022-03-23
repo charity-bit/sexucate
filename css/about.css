@@ -312,6 +312,9 @@ margin-top: 5%;
 .team-container{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
   padding: 5% 0;
   
 }
@@ -335,8 +338,8 @@ margin-top: 5%;
   transform: translateY(-50%);
   z-index: 1;
 }
-.positin h4{
-  font-size: 16px;
+.position h4{
+  font-size: 20px;
 }
 .position p {
   font-size: 12px;
