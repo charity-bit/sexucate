@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.vr{
+    width: 2px;
+    height: 70px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 250px;
+    margin-top: 56%;
+   
+}
+.vr1{
+    width: 2px;
+    height: 70px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 250px;
+    /* margin-top: %;  */
+}
+.foot{
+    /* text-align: center; */
+     padding: 1.5px; 
+    background-color: #C3F0FF;
+    color: black;
+}
+hr{
+    background-color: rgb(0, 194, 255);
+}
