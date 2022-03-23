@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+::after,
+*,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-accent: #00c2ff;
+  --clr-light-blue: #c3f0ff;
+  --clr-light: #fff;
+  --clr-dark: #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 1% 0;
+}
+.logo h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo h3 span {
+  color: var(--clr-accent);
+}
+
+nav {
+  display: flex;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+nav ul li {
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+nav ul li:hover {
+  color: var(--clr-accent);
+}
+nav ul li small {
+  display: block;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 12px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  transition: all 1s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: var(--clr-accent);
+}
+
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: var(--clr-accent);
+  margin-top: -25px;
+}
+
+
+#hero {
+  height: 100vh;
+  margin-top: -1%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.pexels.com/photos/4672720/pexels-photo-4672720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cta-text {
+  width: 80%;
+}
+
+.cta-text p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  color: var(--clr-light);
+}
+
+.cta-text h3 {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 84px;
+  color: #00c2ff;
+}
+.mouse ion-icon:hover {
+  animation-play-state: paused;
+}
+.mouse {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouse ion-icon {
+  font-size: 56px;
+  animation-name: animate;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  color: var(--clr-light-blue);
+}
+
+#find {
+  height: 80vh;
+}
+.find-container {
+  height: 100%;
+  gap: 5%;
+}
+.left {
+  width: 45%;
+  height: 100%;
+  background-image: url("../images/map.png");
+  position: relative;
+}
+.left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--clr-accent);
+  opacity: 0.5;
+}
+.right, .a-right{
+  width: 55%;
+  display: flex;
+  align-items: center;
+}
+
+.right form, .a-right form{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  justify-self: center;
+}
+
+.input, .a-input{
+  width: 100%;
+  margin: 0 auto;
+}
+.input input,.a-input input{
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--clr-accent);
+  width: 80%;
+}
+.input p {
+  align-self: flex-start;
+}
+.search{
+  padding: 2% 5%;
+  background: #00c2ff;
+  border: 2px solid #c3f0ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  align-self: center;
+  margin-top: 5%;
+}
+
+.search a ,.send a {
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+#bot {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.bot-container {
+  display: flex;
+  width: 100%;
+}
+.b-left {
+  width: 40%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+}
+.b-left ion-icon {
+  width: 60%;
+  height: 336px;
+  justify-self: center;
+  align-self: center;
+  margin: 0 auto;
+  color: var(--clr-accent);
+}
+
+.b-right {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.b-right h1{
+  font-weight: 600;
+  font-size: 2.5vw;
+  line-height: 50px;
+  color: #000000;
+}
+.b-right p {
+  font-weight: 300;
+  font-size: 1.7vw;
+  text-align: left;
+  width: 65%;
+  margin: 0 auto;
+  line-height: 40px;
+}
+
+.b-right button{
+  padding: 2% 5%;
+  align-self: center;
+  margin-top: 5%;
+  background: #00C2FF;
+border: 2px solid #C3F0FF;
+box-sizing: border-box;
+border-radius: 40px;
+}
+
+.assist-container{
+  display: flex;
+  gap:5%;
+}
+.a-left{
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.send{
+  padding: 2% 10%;
+  background: #00c2ff;
+  border: 2px solid #c3f0ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  align-self: center;
+  margin: 3% 0;
+
+}
+.a-left h1{
+  font-weight: 600;
+  font-size: 2.5vw;
+  color: var(--clr-accent);
+}
+.a-left p{
+  font-size: 1.7vw;
+  font-weight: 300;
+}
+
+.gender{
+  display: flex;
+  gap: 15px;
+}
+
+
+/* footer */
+
+#footer{
+  background-color: var(--clr-light-blue);
+  padding-top:4%;
+  padding-bottom: 0;
+
+}
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+}
+.main-list{
+  display: flex;
+  justify-content: space-between;
+}
+.main-list ul {
+  display: flex;
+  flex-direction: column;
+}
+.about h3,.inform h3,.fsupport h3,.usupport h3{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+.about,.fsupport,.usupport,.inform{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:10px
+}
+
+li a{
+  text-align: left;
+}
+.main-list ul li a{
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--clr-dark);
+
+}
+
+.hr2{
+  background-color: var(--clr-accent);
+  height: 4px;
+  width: 100%;
+}
+.pr{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.pr ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap:1px;
+}
+.pr ul li small{
+  font-size: 10px;
+}
+.footer-nav p{
+  font-size: 10px;
+  align-self: flex-end;
+  margin-bottom: 1%;
+
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7%);
+  }
+
+  100% {
+    transform: translateY(15%);
+  }
+}
