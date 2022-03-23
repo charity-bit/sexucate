@@ -159,27 +159,26 @@ nav ul li a:hover {
   background-color: var(--clr-accent);
   opacity: 0.5;
 }
-.right {
+.right, .a-right{
   width: 55%;
   display: flex;
   align-items: center;
 }
 
-.right form {
+.right form, .a-right form{
   display: flex;
   gap: 20px;
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
- justify-self: center;
+  justify-self: center;
 }
 
-.input {
+.input, .a-input{
   width: 100%;
   margin: 0 auto;
- 
 }
-.input input {
+.input input,.a-input input{
   outline: none;
   border-top: none;
   border-left: none;
@@ -187,13 +186,11 @@ nav ul li a:hover {
   border-bottom: 2px solid var(--clr-accent);
   width: 80%;
 }
-.input p{
-    align-self: flex-start;
-
+.input p {
+  align-self: flex-start;
 }
-.search {
+.search{
   padding: 2% 5%;
-  border: none;
   background: #00c2ff;
   border: 2px solid #c3f0ff;
   box-sizing: border-box;
@@ -202,26 +199,92 @@ nav ul li a:hover {
   margin-top: 5%;
 }
 
-.search a {
+.search a ,.send a {
   text-decoration: none;
   color: var(--clr-light);
 }
 
-.bot-container{
+#bot {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.bot-container {
+  display: flex;
+  width: 100%;
+}
+.b-left {
+  width: 40%;
+  margin: 0 auto;
+  height: 100%;
   display: flex;
 }
-.b-left{
-  width:40%;
-  height: 100%;
+.b-left ion-icon {
+  width: 60%;
+  height: 336px;
+  justify-self: center;
+  align-self: center;
+  margin: 0 auto;
+  color: var(--clr-accent);
 }
 
-.b-right{
-
-
+.b-right {
   width: 55%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+}
+.b-right h1 {
+  font-weight: 600;
+  font-size: 2.5vw;
+  text-align: left;
+  line-height: 84px;
+  color: #000000;
+}
+.b-right p {
+  font-weight: 300;
+  font-size: 1.7vw;
+  text-align: left;
+  width: 65%;
+  margin: 0 auto;
+  line-height: 40px;
+}
+
+.b-right button{
+  padding: 2% 5%;
+  align-self: center;
+  margin-top: 5%;
+  background: #00C2FF;
+border: 2px solid #C3F0FF;
+box-sizing: border-box;
+border-radius: 40px;
+}
+
+.assist-container{
+  display: flex;
+}
+.a-left{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.send{
+  padding: 2% 10%;
+  background: #00c2ff;
+  border: 2px solid #c3f0ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  align-self: center;
+
+}
+
+.gender{
+  display: flex;
+  gap: 15px;
 }
 
 @keyframes animate {
