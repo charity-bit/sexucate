@@ -93,9 +93,7 @@ nav ul li a:hover {
   position: relative;
 }
 
-.l4-items,.l5-items,.l3-items{
-  width: 170px;
-}
+
 .l1-items,
 .l2-items,
 .l3-items,
@@ -103,17 +101,20 @@ nav ul li a:hover {
 .l5-items {
   position: absolute;
   background-color: var(--clr-light-blue);
-  display: flex;
+  display:flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 15px 0;
   opacity: 0;
+  left:50%;
+  transform: translateX(-50%);
   border: 2px solid #c3f0ff;
-  width: 150px;
+  width: 200px;
   margin-top: 10px;
-  transition: opacity 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
+
 .l1-items li a,
 .l2-items li a,
 .l3-items li a,

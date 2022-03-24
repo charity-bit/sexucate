@@ -168,9 +168,10 @@ nav ul li a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.s-info {
-  height: 50vh !important;
+.s-info{
+  height: 300px !important;
 }
+
 .info,.s-info {
   width: 80%;
   margin: 0 auto;
@@ -182,7 +183,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   margin-top: -20%;
-  height: 80vh;
+  height: 400px;
   z-index: 1;
   position: relative;
 }
@@ -349,13 +350,72 @@ li a {
   display: block;
 }
 
-@media screen and (max-width: 575px) {
 
+
+@media screen and (max-width:300px) {
+  
+}
+
+
+@media screen and (max-width: 575px) {
+  .logo{
+    height: 70px;
+  }
+  nav{
+    display: none;
+  }
+  .sx-img,.rel-img,.ab-img{
+    width: 80%;
+    margin:0 auto
+  }
+  .hap-img,.mk-img,.preg-img{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .sx,.ab,.rel{
+    margin-top: 5%;
+  } 
+  
+  .info{
+    width: 70%;
+    padding: 5% 2%;
+  }
+  .s-info{
+    width: 70%;
+    padding: 5% 2%;
+  }
+  
   .edu-container{
-    gap: 40px
+    gap: 40px;
+  }
+.s-container{
+  gap:40px;
+}
+
+}
+
+@media screen and (min-width: 576) {
+  .edu-container{
+    gap: 40px;
+  }
+  .s-container{
+    gap: 40px;
+  }
+
+  
+}
+
+@media screen and (min-width:	768px){
+  .edu-container{
+    gap: 40px;
   }
   .sx,.ab,.rel{
     margin: 0 auto
   }
-  
-}
+
+  .s-container{
+   gap: 4%
+  }
+
+
+}  
