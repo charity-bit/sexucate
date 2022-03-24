@@ -129,6 +129,7 @@
                   max-width: 676px;
                   max-height: 947px;
                   float: right;
+                  margin-right: -1%;
                   margin-top: -3%;
 
                   overflow: hidden;
@@ -216,22 +217,23 @@
 
     <section id="contact">
         <h3>Contact Us</h3>
-        <form action="">
+       
+        <form id="contact-form">
             <div class="a-input">
               <p>Your Name</p>
-              <input type="text" />
+              <input type="text" id="nm" />
             </div>
             <div class="a-input">
               <p>Phone</p>
-              <input type="tel" />
+              <input type="tel" id="phon" />
             </div>
             <div class="a-input">
               <p>Message</p>
-             <textarea name="msg" id="" cols="20" rows="10"></textarea>
+             <textarea name="msg"  cols="20" rows="10" id="msg"></textarea>
             </div>
             
             </div>
-            <button class="send">
+            <button class="send" id="send">
               <a href="#">send</a>
             </button>
           </form>
@@ -308,5 +310,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/nav.js"></script>
+    <script src="../js/support.js"></script>
   </body>
 </html>

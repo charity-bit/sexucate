@@ -167,8 +167,7 @@ nav ul li a:hover {
 }
 #map h3{
   font-weight: 600;
-  font-size: 16px;
-  
+  font-size: 16px; 
 }
 .entry{
   display: flex;
@@ -268,24 +267,25 @@ li a {
 
 #contact{
   width: 100%;
+ 
 }
 #contact h3{
   text-align: center;
   margin-bottom: 10px;
   font-size: 20px;
 }
+
 #contact form{
   width: 80%;
   margin:0 auto;
   display: flex;
-  align-self: center;
   flex-direction: column;
   gap: 20px;
 }
 #contact form input{
   width: 80%;
   outline: none;
-  border-bottom: 1px solid var(--clr-accent);
+  border-bottom: 1px solid var(--clr-dark);
   border-left: none;
   border-right: none;
   border-top: none;
@@ -294,11 +294,12 @@ li a {
 
 #contact form p {
   margin-top: 5px;
+  color: var(--clr-accent);
 }
 #contact form textarea{
   width: 80%;
   margin:0 auto;
-  border: 1px solid var(--clr-accent);
+  border: 1px solid var(--clr-dark)
 }
 .send {
   padding: 1% 7%;
@@ -312,5 +313,5 @@ li a {
 
 .send a {
   text-decoration: none;
-  color: var(--clr-light);
+  color:var(--clr-dark)
 }
