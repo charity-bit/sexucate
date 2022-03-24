@@ -5,7 +5,12 @@ let listItems = ["l1","l2","l3","l4","l5"];
         $(`.${item}-items`).css("opacity", 1);
       },
       () => {
-        $(`.${item}-items`).css("opacity", 0);
+
+        $(`.${item}-items`).css("opacity", 0)
+        
       }
     );
   });
+
+ 
+ 

@@ -22,7 +22,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -74,7 +74,7 @@ ul li small {
 }
 .text h1{
      color: var(--clr-accent);
-     font-size: 5vw;
+     font-size: 4.5vw;
      width: 100%;
 }
 .text p{
