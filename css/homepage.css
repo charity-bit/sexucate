@@ -84,6 +84,44 @@ nav ul li a:hover {
 }
 
 
+/* hover on nav */
+.l1,
+.l2,
+.l3,
+.l4,
+.l5 {
+  position: relative;
+}
+
+.l4-items,.l5-items,.l3-items{
+  width: 170px;
+}
+.l1-items,
+.l2-items,
+.l3-items,
+.l4-items,
+.l5-items {
+  position: absolute;
+  background-color: var(--clr-light-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+  opacity: 0;
+  border: 2px solid #c3f0ff;
+  width: 150px;
+  margin-top: 10px;
+  transition: opacity 1s ease-in-out;
+}
+.l1-items li a,
+.l2-items li a,
+.l3-items li a,
+.l4-items li a,
+.l5-items li a {
+  font-size: 12px;
+}
+
 #hero {
   height: 100vh;
   margin-top: -1%;
@@ -161,13 +199,15 @@ nav ul li a:hover {
   background-color: var(--clr-accent);
   opacity: 0.5;
 }
-.right, .a-right{
+.right,
+.a-right {
   width: 55%;
   display: flex;
   align-items: center;
 }
 
-.right form, .a-right form{
+.right form,
+.a-right form {
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -176,11 +216,13 @@ nav ul li a:hover {
   justify-self: center;
 }
 
-.input, .a-input{
+.input,
+.a-input {
   width: 100%;
   margin: 0 auto;
 }
-.input input,.a-input input{
+.input input,
+.a-input input {
   outline: none;
   border-top: none;
   border-left: none;
@@ -191,7 +233,7 @@ nav ul li a:hover {
 .input p {
   align-self: flex-start;
 }
-.search{
+.search {
   padding: 2% 5%;
   background: #00c2ff;
   border: 2px solid #c3f0ff;
@@ -201,7 +243,8 @@ nav ul li a:hover {
   margin-top: 5%;
 }
 
-.search a ,.send a {
+.search a,
+.send a {
   text-decoration: none;
   color: var(--clr-light);
 }
@@ -238,7 +281,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
 }
-.b-right h1{
+.b-right h1 {
   font-weight: 600;
   font-size: 2.5vw;
   line-height: 50px;
@@ -253,28 +296,28 @@ nav ul li a:hover {
   line-height: 40px;
 }
 
-.b-right button{
+.b-right button {
   padding: 2% 5%;
   align-self: center;
   margin-top: 5%;
-  background: #00C2FF;
-border: 2px solid #C3F0FF;
-box-sizing: border-box;
-border-radius: 40px;
+  background: #00c2ff;
+  border: 2px solid #c3f0ff;
+  box-sizing: border-box;
+  border-radius: 40px;
 }
 
-.assist-container{
+.assist-container {
   display: flex;
-  gap:5%;
+  gap: 5%;
 }
-.a-left{
+.a-left {
   width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.send{
+.send {
   padding: 2% 10%;
   background: #00c2ff;
   border: 2px solid #c3f0ff;
@@ -282,37 +325,34 @@ border-radius: 40px;
   border-radius: 5px;
   align-self: center;
   margin: 3% 0;
-
 }
-.a-left h1{
+.a-left h1 {
   font-weight: 600;
   font-size: 2.5vw;
   color: var(--clr-accent);
 }
-.a-left p{
+.a-left p {
   font-size: 1.7vw;
   font-weight: 300;
 }
 
-.gender{
+.gender {
   display: flex;
   gap: 15px;
 }
 
-
 /* footer */
 
-#footer{
+#footer {
   background-color: var(--clr-light-blue);
-  padding-top:4%;
+  padding-top: 4%;
   padding-bottom: 0;
-
 }
-.footer-nav{
+.footer-nav {
   display: flex;
   flex-direction: column;
 }
-.main-list{
+.main-list {
   display: flex;
   justify-content: space-between;
 }
@@ -320,53 +360,56 @@ border-radius: 40px;
   display: flex;
   flex-direction: column;
 }
-.about h3,.inform h3,.fsupport h3,.usupport h3{
+.about h3,
+.inform h3,
+.fsupport h3,
+.usupport h3 {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-
 }
-.about,.fsupport,.usupport,.inform{
+.about,
+.fsupport,
+.usupport,
+.inform {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap:10px
+  gap: 10px;
 }
 
-li a{
+li a {
   text-align: left;
 }
-.main-list ul li a{
+.main-list ul li a {
   text-decoration: none;
   font-size: 12px;
   color: var(--clr-dark);
-
 }
 
-.hr2{
+.hr2 {
   background-color: var(--clr-accent);
   height: 4px;
   width: 100%;
 }
-.pr{
+.pr {
   display: flex;
   justify-content: space-between;
   padding: 2% 0;
 }
-.pr ul{
+.pr ul {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap:1px;
+  gap: 1px;
 }
-.pr ul li small{
+.pr ul li small {
   font-size: 10px;
 }
-.footer-nav p{
+.footer-nav p {
   font-size: 10px;
   align-self: flex-end;
   margin-bottom: 1%;
-
 }
 @keyframes animate {
   0% {

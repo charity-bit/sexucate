@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+::after,
+*,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-accent: #00c2ff;
+  --clr-light-blue: #c3f0ff;
+  --clr-light: #fff;
+  --clr-dark: #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 1% 0;
+}
+.logo h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo h3 span {
+  color: var(--clr-accent);
+}
+
+nav {
+  display: flex;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+nav ul li {
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+nav ul li:hover {
+  color: var(--clr-accent);
+}
+nav ul li small {
+  display: block;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 12px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  transition: all 1s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: var(--clr-accent);
+}
+
+
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: var(--clr-accent);
+  margin-top: -25px;
+}
+
+
+
+/* hover on nav */
+.l1,
+.l2,
+.l3,
+.l4,
+.l5 {
+  position: relative;
+}
+
+.l4-items,.l5-items,.l3-items{
+  width: 170px;
+}
+.l1-items,
+.l2-items,
+.l3-items,
+.l4-items,
+.l5-items {
+  position: absolute;
+  background-color: var(--clr-light-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+  opacity: 0;
+  border: 2px solid #c3f0ff;
+  width: 150px;
+  margin-top: 10px;
+  transition: opacity 1s ease-in-out;
+}
+.l1-items li a,
+.l2-items li a,
+.l3-items li a,
+.l4-items li a,
+.l5-items li a {
+  font-size: 12px;
+}
+
+.section-title {
+  color: var(--clr-accent);
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 4%;
+}
+.section-title span {
+  color: var(--clr-accent);
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--clr-dark) !important;
+}
+
+.edu-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  flex-wrap: wrap;
+}
+
+.sx-img {
+  background-image: url("https://images.pexels.com/photos/6776115/pexels-photo-6776115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center;
+}
+.ab-img {
+  background-image: url("https://images.pexels.com/photos/3683070/pexels-photo-3683070.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center;
+
+}
+.rel-img {
+  background-image: url("https://images.pexels.com/photos/6579102/pexels-photo-6579102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: top center;
+
+}
+.image {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.s-info {
+  height: 50vh !important;
+}
+.info,.s-info {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: var(--clr-light);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin-top: -20%;
+  height: 80vh;
+  z-index: 1;
+  position: relative;
+}
+
+.del,.s-del{
+  display: flex;
+  flex-direction: column;
+  padding:1%;
+  gap: 10px;
+}
+.del h4,.s-del h4 {
+  font-size: 18px;
+  color: var(--clr-accent);
+  font-weight: 500;
+}
+.del p,.s-del p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+}
+.info button,.s-info button{
+  background-color: var(--clr-light-blue);
+  position: absolute;
+  padding: 3% 6%;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* myth section */
+.myth-items{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.myth-item{
+background: rgba(195, 240, 255, 0.12);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+padding: 3% 5%;
+width: 90%;
+margin: 0 auto;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+.title h4{
+  color: var(--clr-accent);
+  font-weight: 500;
+}
+.title ion-icon{
+  color: var(--clr-accent);
+  font-size: 32px;
+}
+.details{
+  font-style: normal;
+font-weight: 300;
+font-size: 1.7vw;
+line-height: 40px;
+}
+
+/* suvivor stories */
+
+.s-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 2%;
+  padding-bottom: 5%;
+
+}
+
+.hap-img{
+  background-image: url("https://images.pexels.com/photos/8040844/pexels-photo-8040844.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+.preg-img{
+background-image: url("https://images.pexels.com/photos/1820919/pexels-photo-1820919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+background-position: center center;
+}
+.mk-img{
+  background-image: url("https://images.pexels.com/photos/936119/pexels-photo-936119.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+   background-position: top center;
+   background-size: cover;
+}
+/* footer */
+
+#footer {
+  background-color: var(--clr-light-blue);
+  padding-top: 4%;
+  padding-bottom: 0;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+.main-list {
+  display: flex;
+  justify-content: space-between;
+}
+.main-list ul {
+  display: flex;
+  flex-direction: column;
+}
+.about h3,
+.inform h3,
+.fsupport h3,
+.usupport h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about,
+.fsupport,
+.usupport,
+.inform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+li a {
+  text-align: left;
+}
+.main-list ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--clr-dark);
+}
+
+.hr2 {
+  background-color: var(--clr-accent);
+  height: 4px;
+  width: 100%;
+}
+.pr {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.pr ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+}
+.pr ul li small {
+  font-size: 10px;
+}
+.footer-nav p {
+  font-size: 10px;
+  align-self: flex-end;
+  margin-bottom: 1%;
+}
+.lala {
+  display: block;
+}
+
+@media screen and (max-width: 575px) {
+
+  .edu-container{
+    gap: 40px
+  }
+  .sx,.ab,.rel{
+    margin: 0 auto
+  }
+  
+}
