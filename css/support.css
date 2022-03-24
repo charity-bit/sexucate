@@ -29,15 +29,8 @@
   background-color: #c3f0ff;
   color: black;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-
-*,
-::after,
-*,
-::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+hr {
+  background-color: rgb(0, 194, 255);
 }
 
 :root {
