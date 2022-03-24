@@ -1,3 +1,14 @@
+$("#search-btn").click((e)=>{
+    e.preventDefault();
+    if($('#sc').val() === ""){
+        alert("location cannot be empty")
+    }
+    else{
+        alert("... searching")
+    }
+})
+
+
 $("#send").click((e)=>{
     e.preventDefault();
      if($("#nm").val() === "" || $("#phon").val() === "" || $("#msg").val() === ""){
