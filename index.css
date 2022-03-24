@@ -75,6 +75,7 @@ ul li small {
 .text h1{
      color: var(--clr-accent);
      font-size: 4.5vw;
+     font-family: "Poppins", sans-serif;
      width: 100%;
 }
 .text p{
