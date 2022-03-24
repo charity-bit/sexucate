@@ -1,5 +1,256 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+::after,
+*,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --clr-accent: #00c2ff;
+  --clr-light-blue: #c3f0ff;
+  --clr-light: #fff;
+  --clr-dark: #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 1% 0;
+}
+.logo h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo h3 span {
+  color: var(--clr-accent);
+}
+
+nav {
+  display: flex;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+nav ul li {
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+nav ul li:hover {
+  color: var(--clr-accent);
+}
+nav ul li small {
+  display: block;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 12px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  transition: all 1s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: var(--clr-accent);
+}
+
+
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: var(--clr-accent);
+  margin-top: -25px;
+}
+
+
+
+/* hover on nav */
+.l1,
+.l2,
+.l3,
+.l4,
+.l5 {
+  position: relative;
+}
+
+
+.l4-items,.l5-items,.l3-items{
+  width: 170px;
+}
+.l1-items,
+.l2-items,
+.l3-items,
+.l4-items,
+.l5-items {
+  position: absolute;
+  background-color: var(--clr-light-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+  opacity: 0;
+  border: 2px solid #c3f0ff;
+  width: 150px;
+  margin-top: 10px;
+  z-index: 1000;
+  transition: opacity 1s ease-in-out;
+}
+.l1-items li a,
+.l2-items li a,
+.l3-items li a,
+.l4-items li a,
+.l5-items li a {
+  font-size: 12px;
+}
+
+#ways{
+   margin-top: 110vh; 
+}
+
+
+
+.ways--container{
+   display: flex;
+   justify-content: center;
+    gap:5%;
+    padding: 2%;
+}
+.d-item{
+    background: rgba(195, 240, 255, 0.12);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+padding: 3% 2%;
+}
+.d-item h3{
+    color: var(--clr-accent);
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 4%;
+}
+.d-item p{
+    font-weight: 300;
+}
+.d-item button{
+    padding:5%;
+    background: #00c2ff;
+    border: 2px solid #c3f0ff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    align-self: center;
+    margin: 3% 0;
+   
+}
+
+.section-title {
+    color: var(--clr-accent);
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 4%;
+  }
+  .section-title span{
+    color: var(--clr-dark);
+    font-weight: 300;
+  }
+#footer {
+    background-color: var(--clr-light-blue);
+    padding-top: 4%;
+    margin-top:5%;
+    padding-bottom: 0;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-list ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .about h3,
+  .inform h3,
+  .fsupport h3,
+  .usupport h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .about,
+  .fsupport,
+  .usupport,
+  .inform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  li a {
+    text-align: left;
+  }
+  .main-list ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--clr-dark);
+  }
+  
+  .hr2 {
+    background-color: var(--clr-accent);
+    height: 4px;
+    width: 100%;
+  }
+  .pr {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+  }
+  .pr ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1px;
+  }
+  .pr ul li small {
+    font-size: 10px;
+  }
+  .footer-nav p {
+    font-size: 10px;
+    align-self: flex-end;
+    margin-bottom: 1%;
+  }
+  .lala {
+    display: block;
+  }
+
+  @media screen and(max-height:770px) {
+    #ways{
+      margin-top: 200vh; 
+   }
+   
+  }
