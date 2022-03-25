@@ -129,9 +129,8 @@ nav ul li a:hover {
 }
 
 #ways{
-   margin-top: 110vh; 
+   margin-top: 150vh; 
 }
-
 
 
 .ways--container{
@@ -248,9 +247,10 @@ padding: 3% 2%;
     display: block;
   }
 
-  @media screen and(max-height:770px) {
+
+  @media screen and (min-height:902px) {
     #ways{
-      margin-top: 200vh; 
-   }
+      margin-top: 110vh; 
+    }
    
   }
